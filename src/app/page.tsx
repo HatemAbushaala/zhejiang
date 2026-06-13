@@ -123,7 +123,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen" dir="ltr">
+    <div className="flex flex-col min-h-screen overflow-x-hidden" dir="ltr">
       {/* ── NAVBAR ── */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
@@ -341,14 +341,14 @@ export default function Home() {
 
             <button
               onClick={prevSlide}
-              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-5 bg-white shadow-md rounded-full p-2 hover:bg-gray-100 transition-colors"
+              className="absolute left-2 sm:left-0 top-1/2 -translate-y-1/2 sm:-translate-x-5 bg-white shadow-md rounded-full p-2 hover:bg-gray-100 transition-colors"
               aria-label="Previous product"
             >
               <ChevronLeftIcon className="w-5 h-5 text-gray-700" />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-5 bg-white shadow-md rounded-full p-2 hover:bg-gray-100 transition-colors"
+              className="absolute right-2 sm:right-0 top-1/2 -translate-y-1/2 sm:translate-x-5 bg-white shadow-md rounded-full p-2 hover:bg-gray-100 transition-colors"
               aria-label="Next product"
             >
               <ChevronRightIcon className="w-5 h-5 text-gray-700" />
