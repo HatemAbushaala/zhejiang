@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
-import { Toaster } from "sonner";
-import "./globals.css";
+import type { Metadata } from "next"
+import { Toaster } from "sonner"
+import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Zhejiang Jiemai – GERVA Heavy-Duty Chisels & Drill Bits",
+  title: "Zhejiang Jiemai – GERMA Heavy-Duty Chisels & Drill Bits",
   description:
-    "Zhejiang Jiemai specializes in electric hammer chisels, pneumatic components, and industrial drill bits under the GERMA and GERVA brands.",
-};
+    "Zhejiang Jiemai specializes in electric hammer chisels, pneumatic components, and industrial drill bits under the GERMA and GERMA brands.",
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en" dir="ltr" className="h-full antialiased">
@@ -20,5 +20,5 @@ export default function RootLayout({
         <Toaster position="top-right" richColors />
       </body>
     </html>
-  );
+  )
 }
