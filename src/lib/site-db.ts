@@ -165,7 +165,7 @@ function mergeWithDefaults(data: Record<string, unknown>): SiteData {
   }
 }
 
-export async function fetchSiteData(): Promise<SiteData> {
+export async function getSiteData(): Promise<SiteData> {
   const snap = await getDoc(siteDoc())
   if (!snap.exists()) return DEFAULT_SITE_DATA
   return mergeWithDefaults(snap.data() as Record<string, unknown>)

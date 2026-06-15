@@ -1,4 +1,6 @@
-import { getSiteData } from "@/lib/site-cache"
+import { getSiteData } from "@/lib/site-db"
+
+export const revalidate = 5
 import { Navbar } from "@/app/_components/navbar"
 import { Hero } from "@/app/_components/hero"
 import { About } from "@/app/_components/about"
