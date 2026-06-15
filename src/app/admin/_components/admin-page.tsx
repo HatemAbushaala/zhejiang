@@ -328,7 +328,7 @@ function ItemsSection({
               <button onClick={() => onEdit(item)} className="text-xs text-gray-500 hover:text-orange-500 transition-colors px-2 py-1 rounded-md hover:bg-orange-50">
                 Edit
               </button>
-              <button onClick={() => onDelete(item.id)} className="text-xs text-gray-500 hover:text-red-500 transition-colors px-2 py-1 rounded-md hover:bg-red-50">
+              <button onClick={() => { if (window.confirm(`Delete "${item.title}"?`)) onDelete(item.id) }} className="text-xs text-gray-500 hover:text-red-500 transition-colors px-2 py-1 rounded-md hover:bg-red-50">
                 Delete
               </button>
             </div>
